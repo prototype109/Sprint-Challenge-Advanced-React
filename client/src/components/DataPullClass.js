@@ -29,7 +29,7 @@ class DataPullClass extends React.Component {
             <div>
                 <Button />
                 {this.state.worldCupData.map(data => {
-                    return <DisplayPlayers players={data} />
+                    return <DisplayPlayers key={data.id} players={data} />
                 })}
                 
             </div>
