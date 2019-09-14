@@ -1,11 +1,12 @@
 import React from 'react';
 import DisplayPlayers from './DisplayPlayers';
+import Button from './Button';
 
 class DataPullClass extends React.Component {
     constructor(){
         super();
         this.state = {
-            worldCupData: []
+            worldCupData: [],
         }
     }
 
@@ -26,7 +27,11 @@ class DataPullClass extends React.Component {
     render(){
         return(
             <div>
-                <DisplayPlayers players={this.state.worldCupData} />
+                <Button />
+                {this.state.worldCupData.map(data => {
+                    return <DisplayPlayers players={data} />
+                })}
+                
             </div>
         )
     }
