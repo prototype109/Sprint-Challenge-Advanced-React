@@ -26,7 +26,7 @@ class DataPullClass extends React.Component {
     render(){
         return(
             <div>
-
+                <DisplayPlayers players={this.state.worldCupData} />
             </div>
         )
     }
