@@ -1,4 +1,5 @@
 import React from 'react';
+import DisplayPlayers from './DisplayPlayers';
 
 class DataPullClass extends React.Component {
     constructor(){
@@ -24,7 +25,9 @@ class DataPullClass extends React.Component {
 
     render(){
         return(
-            <div>rendered</div>
+            <div>
+
+            </div>
         )
     }
 }
